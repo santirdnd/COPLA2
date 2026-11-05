@@ -1,0 +1,73 @@
+{
+  "format_version": 1,
+  "id": "refseq_224",
+  "version": "1.0",
+  "name": "RefSeq 224 (2024)",
+  "description": "NCBI RefSeq Plasmid Database — Release 224",
+  "source": {
+    "database": "NCBI RefSeq",
+    "release": 224,
+    "downloaded": "2024-05-21"
+  },
+  "published": "2026-11-05",
+  "updated": "",
+  "doi": "10.5281/zenodo.23989163",
+  "files": {
+    "readme": {
+      "path": "README.md",
+      "md5": "4825c2c39a6c9c81ce7699d751a9be61",
+      "url": "https://zenodo.org/records/23989163/files/README.md?download=1"
+    },
+    "sequences": {
+      "path": "RS224_plasmid_sequences.zip",
+      "md5": "af1e021f6751b6e99289fa8b525d4a5c",
+      "url": "https://zenodo.org/records/23989163/files/RS224_plasmid_sequences.zip?download=1"
+    },
+    "curated": {
+      "path": "RS224_plasmid_curated.lst",
+      "md5": "ca51e9fc93bf9d4543f1f214b21246be",
+      "url": "https://zenodo.org/records/23989163/files/RS224_plasmid_curated.lst?download=1"
+    },
+    "graph": {
+      "path": "RS224_plasmid_network.pickle",
+      "md5": "7e47703cb669ff95b9cba39463733fff",
+      "url": "https://zenodo.org/records/23989163/files/RS224_plasmid_network.pickle?download=1"
+    },
+    "metadata": {
+      "path": "RS224_plasmid_metadata.tsv.xz",
+      "md5": "8d93691e1f906c84ee54afbb01243c6c",
+      "url": "https://zenodo.org/records/23989163/files/RS224_plasmid_metadata.tsv.xz?download=1",
+      "optional": true
+    },
+    "ani": {
+      "path": "RS224_plasmid_network.ani.tsv.xz",
+      "md5": "69331c2ae49c8cace0907e9fbf323d8d",
+      "url": "https://zenodo.org/records/23989163/files/RS224_plasmid_network.ani.tsv.xz?download=1",
+      "optional": true
+    }
+  },
+  "psani": {
+    "makedb": {
+      "db_name": "CoplaDB",
+      "window": 1000,
+      "step": 200,
+      "ji_sketchsize64": 32,
+      "ji_kmerlen": 21,
+      "ji_minhashtype": 2,
+      "ji_dens": 1,
+      "ji_bbits": 14,
+      "ji_randseed": 41
+    },
+    "dist": {
+      "fragment_id": 0.7,
+      "fragment_len": 0.7,
+      "coverage": 0.5,
+      "correct_ani": false,
+      "size_ratio": 2,
+      "mut_threshold": 0.3
+    }
+  },
+  "copla2": {
+    "size_ratio": 2
+  }
+}
