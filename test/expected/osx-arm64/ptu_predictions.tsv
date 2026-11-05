@@ -1,0 +1,5 @@
+#QueryID	Predicted_PTU	Score	Notes
+NC_001371.1	PTU-E1	0.9978	Query is a PTU-E1 plasmid
+NC_002092.1	-	1.0000	No ANI links to reference plasmids; query is a singleton
+NC_002489.3	-	1.0000	No fragments of 1000 bp to compare with reference plasmids; query is a singleton
+NC_028464.1	PTU-W	1.0000	Query is a PTU-W plasmid

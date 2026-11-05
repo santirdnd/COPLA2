@@ -1,0 +1,11 @@
+name: copla2
+channels:
+- conda-forge
+- bioconda
+- nodefaults
+dependencies:
+- python=3.10
+- graph-tool=2.68
+- numpy=1.26
+- blast=2.16.0
+- bindash=2.3

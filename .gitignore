@@ -1,3 +1,7 @@
+# Databases: only the manifest is versioned; the files it lists are downloaded
+databases/*/*
+!databases/*/manifest.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
