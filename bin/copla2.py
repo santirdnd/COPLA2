@@ -5,6 +5,7 @@ import sys
 import json
 import pickle
 import pathlib
+import warnings
 import argparse
 import multiprocessing
 import numpy as np
@@ -495,9 +496,15 @@ def run_single_query(task):
 
     output_prefix = os.path.join(args.outdir, sanitize_query_id(query_id))
 
-    # Load the reference plasmid network
-    with open(args.ref_graph, 'rb') as fh:
+    # Load the reference plasmid network. The block model state of the pickle keeps a
+    # 'sampling' argument that graph-tool no longer uses and warns about (ignoring it) when
+    # the state is rebuilt: silence only that warning while loading, and drop the argument
+    # so that later copies of the state do not repeat it
+    with open(args.ref_graph, 'rb') as fh, warnings.catch_warnings():
+        warnings.filterwarnings('ignore', message=r"unrecognized keyword arguments: \['sampling'\]",
+                                category=UserWarning, module=r'graph_tool\.inference')
         [g, state] = pickle.load(fh)
+    state.state_args.pop('sampling', None)
 
     # Insert query into the network
     qry_acc = query_id
