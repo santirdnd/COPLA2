@@ -1,0 +1,72 @@
+cff-version: 1.2.0
+message: "If you use COPLA2, please cite it as below."
+title: "COPLA2"
+abstract: >-
+  COPLA2 classifies plasmids into Plasmid Taxonomic Units (PTUs). It computes the
+  average nucleotide identity (ANI) between the query plasmids and the plasmids of a
+  reference database, inserts the queries into the reference network and assigns each
+  one to a PTU with a nested stochastic block model.
+type: software
+authors:
+  - family-names: "Redondo-Salvo"
+    given-names: "Santiago"
+    orcid: "https://orcid.org/0000-0003-0089-6030"
+    affiliation: "Universidad de Cantabria; Instituto de Biomedicina y Biotecnología de Cantabria"
+version: "2.0.0"
+date-released: "2026-11-06"
+license: GPL-3.0-only
+repository-code: "https://github.com/santirdnd/COPLA2"
+keywords:
+  - plasmid
+  - plasmid taxonomic unit
+  - PTU
+  - plasmid classification
+  - average nucleotide identity
+  - stochastic block model
+references:
+  - type: article
+    title: "COPLA, a taxonomic classifier of plasmids"
+    authors:
+      - family-names: "Redondo-Salvo"
+        given-names: "Santiago"
+      - family-names: "Bartomeus-Peñalver"
+        given-names: "Roger"
+      - family-names: "Vielva"
+        given-names: "Luis"
+      - family-names: "Tagg"
+        given-names: "Kaitlin A."
+      - family-names: "Webb"
+        given-names: "Hattie E."
+      - family-names: "Fernández-López"
+        given-names: "Raúl"
+      - family-names: "de la Cruz"
+        given-names: "Fernando"
+    journal: "BMC Bioinformatics"
+    volume: 22
+    start: 390
+    year: 2021
+    doi: "10.1186/s12859-021-04299-x"
+  - type: article
+    title: "Pathways for horizontal gene transfer in bacteria revealed by a global map of their plasmids"
+    authors:
+      - family-names: "Redondo-Salvo"
+        given-names: "Santiago"
+      - family-names: "Fernández-López"
+        given-names: "Raúl"
+      - family-names: "Ruiz"
+        given-names: "Raúl"
+      - family-names: "Vielva"
+        given-names: "Luis"
+      - family-names: "de Toro"
+        given-names: "María"
+      - family-names: "Rocha"
+        given-names: "Eduardo P. C."
+      - family-names: "Garcillán-Barcia"
+        given-names: "M. Pilar"
+      - family-names: "de la Cruz"
+        given-names: "Fernando"
+    journal: "Nature Communications"
+    volume: 11
+    start: 3602
+    year: 2020
+    doi: "10.1038/s41467-020-17278-2"
